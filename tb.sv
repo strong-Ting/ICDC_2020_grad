@@ -38,16 +38,16 @@ SME u_SME (.clk(clk),
 
 always begin #(`CYCLE/2) clk = ~clk; end
 
-initial begin
-    $fsdbDumpfile("SME.fsdb");
-    $fsdbDumpvars;
-    $fsdbDumpMDA;
-end
-
 //initial begin
-//    $dumpfile("SME.vcd");
-//    $dumpvars;
+//    $fsdbDumpfile("SME.fsdb");
+//    $fsdbDumpvars;
+//    $fsdbDumpMDA;
 //end
+
+initial begin
+    $dumpfile("SME.vcd");
+    $dumpvars;
+end
 
 initial begin
     $display("----------------------");

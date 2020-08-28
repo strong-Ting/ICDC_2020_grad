@@ -1,0 +1,59 @@
+[*]
+[*] GTKWave Analyzer v3.3.100 (w)1999-2019 BSI
+[*] Fri Aug 28 01:52:20 2020
+[*]
+[dumpfile] "C:\Users\lin\Desktop\CIC_my\CIC_2020_grad\SME.vcd"
+[dumpfile_mtime] "Fri Aug 28 01:52:15 2020"
+[dumpfile_size] 0
+[savefile] "C:\Users\lin\Desktop\CIC_my\CIC_2020_grad\SME.gtkw"
+[timestart] 9348840
+[size] 1920 1017
+[pos] -1 -1
+*-14.000000 9369970 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] testfixture.
+[sst_width] 197
+[signals_width] 182
+[sst_expanded] 1
+[sst_vpaned_height] 300
+@28
+testfixture.u_SME.clk
+testfixture.u_SME.isstring
+testfixture.u_SME.ispattern
+@24
+testfixture.u_SME.current_state[2:0]
+testfixture.u_SME.next_state[2:0]
+@28
+testfixture.u_SME.valid
+testfixture.u_SME.match_front
+testfixture.u_SME.match
+testfixture.u_SME.valid
+@22
+testfixture.u_SME.match_index[4:0]
+@28
+testfixture.u_SME.match_after
+@820
+testfixture.u_SME.pattern[63:0]
+@821
+testfixture.u_SME.pattern_after[63:0]
+@820
+testfixture.u_SME.pattern_front[63:0]
+testfixture.u_SME.stringData[255:0]
+@24
+testfixture.u_SME.special_locate[2:0]
+@28
+testfixture.u_SME.special
+@c00820
+#{testfixture.u_SME.chardata[7:0]} testfixture.u_SME.chardata[7] testfixture.u_SME.chardata[6] testfixture.u_SME.chardata[5] testfixture.u_SME.chardata[4] testfixture.u_SME.chardata[3] testfixture.u_SME.chardata[2] testfixture.u_SME.chardata[1] testfixture.u_SME.chardata[0]
+@28
+testfixture.u_SME.chardata[7]
+testfixture.u_SME.chardata[6]
+testfixture.u_SME.chardata[5]
+testfixture.u_SME.chardata[4]
+testfixture.u_SME.chardata[3]
+testfixture.u_SME.chardata[2]
+testfixture.u_SME.chardata[1]
+testfixture.u_SME.chardata[0]
+@1401200
+-group_end
+[pattern_trace] 1
+[pattern_trace] 0
