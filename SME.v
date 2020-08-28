@@ -162,21 +162,21 @@ begin
     else patternTemp[7:0] = pattern[7:0];
 
     
-    //if(pattern[7:0] == 8'h5e && pattern[15:8] == 8'h2e) patternTemp[15:8] = stringBuffer[7:0];
-    if(pattern[15:8] == 8'h2e) patternTemp[15:8] = stringBuffer[15:8];  
+    if(pattern[7:0] == 8'h5e && pattern[15:8] == 8'h2e && match_index == 5'd0) patternTemp[15:8] = stringBuffer[7:0];
+    else if(pattern[15:8] == 8'h2e) patternTemp[15:8] = stringBuffer[15:8];  
     else patternTemp[15:8] = pattern[15:8];
 
-   // if(pattern[7:0] == 8'h5e && pattern[23:16] == 8'h2e) patternTemp[23:16] = stringBuffer[15:8];
-    if(pattern[23:16] == 8'h2e) patternTemp[23:16] = stringBuffer[23:16]; 
+    if(pattern[7:0] == 8'h5e && pattern[23:16] == 8'h2e && match_index == 5'd0) patternTemp[23:16] = stringBuffer[15:8];
+    else if(pattern[23:16] == 8'h2e) patternTemp[23:16] = stringBuffer[23:16]; 
     else if(pattern[23:16] == 8'h24) patternTemp[23:16] = 8'h20;
     else patternTemp[23:16] = pattern[23:16];
 
-    
+    if(pattern[7:0] == 8'h5e && pattern[31:24] == 8'h2e && match_index == 5'd0) patternTemp[31:24] = stringBuffer[23:16];
     if(pattern[31:24] == 8'h2e) patternTemp[31:24] = stringBuffer[31:24];
     else if(pattern[31:24] == 8'h24) patternTemp[31:24] = 8'h20;
     else patternTemp[31:24] = pattern[31:24];
 
-    
+    if(pattern[7:0] == 8'h5e && pattern[39:32] == 8'h2e && match_index == 5'd0) patternTemp[39:32] = stringBuffer[31:24];
     if(pattern[39:32] == 8'h2e) patternTemp[39:32] = stringBuffer[39:32];
     else if(pattern[39:32] == 8'h24) patternTemp[39:32] = 8'h20;
     else patternTemp[39:32] = pattern[39:32];
@@ -250,8 +250,14 @@ begin
         if(match_index == 5'd0 && pattern[7:0] == 8'h5e)
         begin
             case(patternCounter)
+            4'd2:
+            begin
+                if(patternTemp[15:8] == stringBuffer[7:0]) matchTemp = 1'd1;
+                else matchTemp = 1'd0;
+            end
             4'd3: 
             begin
+                
                 if(patternTemp[23:8] == stringBuffer[15:0]) matchTemp = 1'd1;
                 else matchTemp = 1'd0;
             end
@@ -646,7 +652,7 @@ begin
     if(reset) match_index <= 5'd0;
     else if(current_state == compare_special_front && next_state == compare_special_after) match_index <= match_index + special_locate;
     else if(current_state == compare_special_after && next_state == result) match_index <= matc_indexTemp;
-    else if(matchTemp == 1'd1 && pattern[7:0] == 8'h5e) match_index <= match_index + 5'd1;
+    else if(matchTemp == 1'd1 && pattern[7:0] == 8'h5e && match_index != 5'd0) match_index <= match_index + 5'd1;
     else if(current_state == compare && next_state == compare) match_index <= match_index + 5'd1;
     else if(current_state == compare_special_front ) match_index <= match_index + 5'd1;
     else if(current_state == compare_special_after && next_state == compare_special_after) match_index <= match_index + 5'd1;
