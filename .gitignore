@@ -1,0 +1,6 @@
+tsmc13_neg.v
+synopsys_dc.setup
+CONV.sdc
+report.000
+*.pdf
+dat_univ
