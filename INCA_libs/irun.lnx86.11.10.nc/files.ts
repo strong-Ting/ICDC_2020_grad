@@ -1,0 +1,4 @@
+1599374027 /home/M10912039/GitHub/CIC_2020_grad/tb_term.sv
+1599408316 /home/M10912039/GitHub/CIC_2020_grad/SME.v
+1599409026 /home/M10912039/GitHub/CIC_2020_grad/SME_syn.v
+1599408709 /home/M10912039/GitHub/CIC_2020_grad/ncvlog.f

@@ -1,0 +1,210 @@
+ncsim 11.10-s072
+Linux 2.6.18-404.el5 #1 SMP Tue Apr 7 12:42:54 EDT 2015 x86_64
+CPU cores: 8
+Limit information:
+======================================
+cputime			unlimited
+filesize		unlimited
+datasize		unlimited
+stacksize		10240 kbytes
+coredumpsize	0 kbytes
+memoryuse		unlimited
+vmemoryuse		unlimited
+descriptors		1024
+memorylocked	32 kbytes
+maxproc			63630
+======================================
+(Special)Runtime environment variables:
+
+Runtime environment variables:
+USER=M10912039
+LOGNAME=M10912039
+HOME=/home/M10912039
+PATH=/usr/cad/synopsys/spice_explorer/cur/bin:/usr/cad/synopsys/cosmos_scope/cur/ai_bin:/usr/cad/synopsys/verdi/cur/bin:/usr/cad/synopsys/verdi/cur/nLint/bin:/usr/cad/synopsys/laker/cur/bin:/usr/cad/synopsys/adp/cur/bin:/usr/bin/X11:/usr/cad/synopsys/primetime/cur/amd64/syn/bin:/usr/bin/X11:/usr/cad/synopsys/primepower/cur/bin:/usr/cad/synopsys/star-rcxt/cur/bin:/usr/cad/synopsys/pathmill/cur/amd64/pm/bin:/usr/cad/synopsys/vcs-mx/cur/bin:/usr/cad/synopsys/vcs-mx/cur/linux/bin:/usr/cad/synopsys/vcs-mx/cur/linux/util:/usr/cad/synopsys/vcs-mx/cur/linux/flexlm:/usr/cad/synopsys/vcs/cur/bin:/usr/cad/synopsys/vcs/cur/linux/bin:/usr/cad/synopsys/vcs/cur/linux/util:/usr/cad/synopsys/vcs/cur/linux/flexlm:/usr/cad/synopsys/nanosim/cur/bin:/usr/cad/synopsys/nanosim/cur/linux/ns/bin:/usr/bin/X11:/usr/cad/synopsys/synthesis/cur/amd64/syn/bin:/usr/cad/synopsys/vera/cur/cur/bin:/usr/cad/synopsys/tmax/cur/bin:/usr/cad/synopsys/icc/cur/amd64/syn/bin:/usr/cad/synopsys/hercules/cur/bin/AMD.64:/usr/cad/synopsys/formality/cur/bin:/usr/cad/synopsys/customexplorer/cur/bin:/usr/cad/synopsys/hspice/cur/hspice/bin:/usr/cad/synopsys/hspice/cur/hspice/GNU/rhel/gcc-4.7.2/bin:/usr/cad/synopsys/hspice/cur/hspice/amd64:/usr/bin:/usr/ucb/bin:/usr/cad/synopsys/astro/cur/bin/AMD.64:/usr/cad/agilent/ADS2013_06/bin:/usr/cad/cadence/IC/cur/bin:/usr/cad/agilent/ads/cur/bin:/usr/cad/agilent/ads/cur/tools/bin:/usr/cad/agilent/gg/cur/aa:/usr/cad/agilent/gg/cur/bin:/usr/cad/agilent/ads/cur/bin:/usr/cad/mentor/calibre/cur/bin:/usr/cad/mentor/adms/cur/bin:/usr/cad/mentor/adms/cur/modeltech/bin:/usr/cad/cadence/IC/cur51.41.151/tools/dfII/bin:/usr/cad/cadence/IC/cur51.41.151/tools/dracula/bin:/usr/cad/cadence/IC/cur51.41.151/tools/bin:/usr/cad/cadence/EDI/cur10.13.005/tools/celtic/bin:/usr/cad/cadence/EDI/cur10.13.005/tools/plato/bin:/usr/cad/cadence/EDI/cur10.13.005/tools/dfII/bin:/usr/cad/cadence/EDI/cur10.13.005/tools/fe/bin:/usr/cad/cadence/EDI/cur10.13.005/tools/cdsdoc/bin:/usr/cad/cadence/EDI/cur10.13.005/tools/bin:/usr/cad/cadence/EDI/cur10.13.005//tools/tlfUtil/bin:/usr/cad/cadence/INCISIV/cur/tools/bin:/usr/cad/cadence/INCISIV/cur/tools/vtools/vfault/bin:/usr/cad/cadence/INCISIV/cur/tools/dfII/bin:/usr/cad/cadence/EXT/cur/tools/bin:/usr/cad/cadence/CONFRML/cur/./bin:/usr/cad/cadence/CONFRML/cur/tools/bin:/usr/cad/cadence/NEOCIRCUIT/cur/tools/NeoCircuit/bin:bin.linux:/usr/cad/cadence/MMSIM/cur/tools/dfII/bin:/usr/cad/cadence/MMSIM/cur/tools/bin:/usr/cad/cadence/ASSURA/cur/tools/assura/bin:/usr/cad/cadence/ASSURA/cur/tools/dsm/bin:/usr/cad/cadence/ASSURA/cur/tools/bin:/usr/cad/cadence/ASSURA/cur/tools/dfII/bin:/usr/cad/MATLAB/MATLAB_Production_Server/R2013a/bin:/usr/lib64/qt-3.3/bin:/usr/kerberos/bin:/usr/local/bin:/bin:/usr/bin:/user/cad/silvaco/2010.00/bin:/usr/cad/silvaco/analog/cur/bin:/usr/cad/silvaco/analog/cur/bin:/usr/cad/silvaco/OnlyForCIC/cur/bin:/cad/synopsys_sun/dw_home/cur/bin
+MAIL=/var/spool/mail/M10912039
+SHELL=/bin/csh
+SSH_CLIENT=140.125.44.75 55567 22
+SSH_CONNECTION=140.125.44.75 55567 140.125.44.59 22
+SSH_TTY=/dev/pts/3
+TERM=xterm
+DISPLAY=localhost:12.0
+HOSTTYPE=x86_64-linux
+VENDOR=unknown
+OSTYPE=linux
+MACHTYPE=x86_64
+SHLVL=1
+PWD=/home/M10912039/GitHub/CIC_2020_grad
+GROUP=unknown
+HOST=DICS60
+REMOTEHOST=dics15.ee.yuntech.edu.tw
+HOSTNAME=DICS60
+INPUTRC=/etc/inputrc
+LS_COLORS=no=00:fi=00:di=00;34:ln=00;36:pi=40;33:so=00;35:bd=40;33;01:cd=40;33;01:or=01;05;37;41:mi=01;05;37;41:ex=00;32:*.cmd=00;32:*.exe=00;32:*.com=00;32:*.btm=00;32:*.bat=00;32:*.sh=00;32:*.csh=00;32:*.tar=00;31:*.tgz=00;31:*.arj=00;31:*.taz=00;31:*.lzh=00;31:*.zip=00;31:*.z=00;31:*.Z=00;31:*.gz=00;31:*.bz2=00;31:*.bz=00;31:*.tz=00;31:*.rpm=00;31:*.cpio=00;31:*.jpg=00;35:*.gif=00;35:*.bmp=00;35:*.xbm=00;35:*.xpm=00;35:*.png=00;35:*.tif=00;35:
+CVS_RSH=ssh
+G_BROKEN_FILENAMES=1
+SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+KDE_IS_PRELINKED=1
+KDEDIR=/usr
+LESSOPEN=|/usr/bin/lesspipe.sh %s
+QTDIR=/usr/lib64/qt-3.3
+QTINC=/usr/lib64/qt-3.3/include
+QTLIB=/usr/lib64/qt-3.3/lib
+LM_LICENSE_FILE=26585@lsnchu:1900@lscic.cic.org.tw:1717@lsnchu:5280@lscic:5280@lsnchu:5280@lscic:
+ASSURAHOME=/usr/cad/cadence/ASSURA/cur
+LD_LIBRARY_PATH=/usr/cad/CIC/GLIBCXX/3.4.10:/usr/cad/synopsys/cosmos_scope/cur/CosmosScope/bin:/usr/cad/synopsys/verdi/cur/share/PLI/IUS/LINUX/:/usr/cad/synopsys/hspice/cur/hspice/amd64/interfaces:/usr/cad/silvaco/analog/cur/lib/smartview/2.24.14.R/x86_64-linux::/usr/cad/cadence/IC/cur51.41.151/tools/lib:/usr/cad/cadence/EDI/cur10.13.005//tools/tlfUtil/lib:/usr/cad/cadence/INCISIV/cur/tools/lib:/usr/cad/cadence/INCISIV/cur/tools/vtools/vfault/lib:/usr/cad/cadence/EXT/cur/tools/lib:/usr/cad/cadence/CONFRML/cur/tools/lib:/usr/cad/cadence/NEOCIRCUIT/cur/tools/NeoCircuit/lib.linux:/usr/cad/cadence/MMSIM/cur/tools/lib:/usr/cad/cadence/ASSURA/cur/tools/assura/lib:/usr/cad/cadence/ASSURA/cur/tools/dsm/lib:/usr/cad/cadence/ASSURA/cur/tools/lib:/usr/openwin/lib:/usr/dt/lib:/usr/lib:/usr/local/lib:/usr/cad/synopsys/vera/cur/cur/lib
+OAHOME=/usr/cad/cadence/EDI/cur10.13.005/oa_v22.41.013
+OA_HOME=/usr/cad/cadence/EDI/cur10.13.005/oa_v22.41.013
+NEOCKTHOME=/usr/cad/cadence/NEOCIRCUIT/cur/tools/NeoCircuit
+VERPLEX_HOME=/usr/cad/cadence/CONFRML/cur
+ENCOUNTER=/usr/cad/cadence/EDI/cur10.13.005/tools/fe
+CDS_Netlisting_Mode=Analog
+MGC_AMS_HOME=/usr/cad/mentor/adms/cur
+MGC_TMPDIR=/tmp
+MGC_LOCATION_MAP=NO_MAP
+MGC_HOME=/usr/cad/mentor/calibre/cur
+HPEESOF_DIR=/usr/cad/agilent/ADS2013_06
+AGILEESOFD_LICENSE_FILE=1900@lscic3.cic.org.tw
+CDS_LOAD_ENV=CSF
+CDSHOME=/usr/cad/cadence/IC/cur
+XPEDION=/usr/cad/agilent/gg/cur
+XPEDION_CADENCE_VERSION=510
+ossSimUserHnlDir=/usr/cad/agilent/ads/cur/idf/ads_site/hnl
+ossSimUserSiDir=/usr/cad/agilent/ads/cur/idf/ads_site/si
+SFLM_SERVERS=lscic2
+XKEYSYMDB=/usr/cad/synopsys/astro/cur/etc/XKeysymDB
+XLOCALEDIR=/usr/cad/synopsys/astro/cur/etc/locale
+installdir=/usr/cad/synopsys/hspice/cur/hspice
+ARCH=amd64
+CMIARCH=RH
+mraarch=amd64
+TMIARCH=RH
+HSP_HOME=/usr/cad/synopsys/hspice/cur/hspice
+SNPS_PLATFORM=amd64
+HSP_GCC=/usr/cad/synopsys/hspice/cur/hspice/GNU/rhel/gcc-4.7.2/bin/gcc -m64 
+SNPS_64=1
+HSP_GCC_VERSION=4.7.2
+FORMALITY=/usr/cad/synopsys/formality/cur
+SYNOPSYS=/usr/cad/synopsys/synthesis/cur
+SYNOPSYS_TMAX=/usr/cad/synopsys/tmax/cur
+VERA_HOME=/usr/cad/synopsys/vera/cur/cur
+SYNTHESIS=/usr/cad/synopsys/synthesis/cur
+SYN_MAN_DIR=/usr/cad/synopsys/synthesis/cur/doc/syn/man
+MANPATH=/usr/cad/synopsys/primepower/cur/doc/pp/man:/usr/cad/synopsys/primepower/cur/doc/pt/man:/usr/cad/synopsys/pathmill/cur/doc/pm/man:/usr/cad/synopsys/pathmill/cur/doc/amps/man:/usr/cad/synopsys/nanosim/cur/doc/ns/man:/usr/cad/synopsys/synthesis/cur/doc/syn/man
+DESIGNWARE_HOME=/cad/synopsys_sun/dw_home/cur
+SNPS_SIMIF=/usr/cad/synopsys/nanosim/cur
+VCS_HOME=/usr/cad/synopsys/vcs-mx/cur
+VCS_CC=gcc
+synopsys_root=/usr/cad/synopsys/pathmill/cur
+PRIMEPOWER=/usr/cad/synopsys/primepower/cur
+PRIMETIME=/usr/cad/synopsys/primetime/cur
+Laker_TCL_L3=1
+Laker_TCL_ToolBox=1
+SHLIB_PATH=/usr/cad/synopsys/verdi/cur/share/PLI/IUS/LINUX
+LAKER_PDK_DIR=/usr/cad/TSMC_Process/MSICS/TSMC18/T018MMSP001G1
+/home/M10912039/GitHub/CIC_2020_grad/INCA_libs/irun.lnx86.11.10.nc/svpp.ts
+CDS_ARCH=lnx86
+NCRUNMODE=ncverilog:./INCA_libs/irun.lnx86.11.10.nc
+IRUNBATCH=FALSE
+TCL_LIBRARY=/usr/cad/cadence/INCISIV/cur/tools/inca/files/tcl/library
+Runtime command line arguments:
+argv[0]=ncverilog
+argv[1]=-f
+argv[2]=ncvlog.f
+argv[3]=-sv
+argv[4]=tb_term.sv
+argv[5]=SME_syn.v
+argv[6]=+access+r
+argv[7]=-v
+argv[8]=tsmc13_neg.v
+argv[9]=+define+SDF
+argv[10]=+ncmaxdelays
+120 profile - 100
+          CPU/Mem usage: 0.030 sys,  0.050 user,  47.14M sys,  0.00M vm
+121 VC callback profile - scalar:0 vector:0
+122 Mon Sep  7 00:17:17 2020
+123 pliAppInit
+124 *Verdi3* : Enable Parallel Dumping.
+125 pliAppMiscSet: New Sim Round
+126 LIBSSCORE=found /usr/cad/synopsys/verdi/cur/share/PLI/IUS/LINUX/libsscore_ius111.so through $LD_LIBRARY_PATH setting.
+127 argv[0]: SME.fsdb
+128 Catch signal 11. Stack trace follows:
+#0  0xffffe410 in __kernel_vsyscall ()
+#1  0x00201f93 in __read_nocancel () from /lib/libc.so.6
+#2  0x0019f238 in _IO_file_read_internal () from /lib/libc.so.6
+#3  0x001a0590 in _IO_new_file_underflow () from /lib/libc.so.6
+#4  0x001a0c8b in _IO_default_uflow_internal () from /lib/libc.so.6
+#5  0x001a200d in __uflow () from /lib/libc.so.6
+#6  0x001958b6 in _IO_getline_info_internal () from /lib/libc.so.6
+#7  0x00195801 in _IO_getline_internal () from /lib/libc.so.6
+#8  0x0019477a in fgets () from /lib/libc.so.6
+#9  0xf70792b9 in ndpGetCallStack () from /usr/cad/synopsys/verdi/cur/share/PLI/IUS/LINUX/libsscore_ius111.so
+#10 0xf70a2763 in pliAppDbg_SigHandler () from /usr/cad/synopsys/verdi/cur/share/PLI/IUS/LINUX/libsscore_ius111.so
+#11 0xf7078df1 in catchSignalCB () from /usr/cad/synopsys/verdi/cur/share/PLI/IUS/LINUX/libsscore_ius111.so
+#12 <signal handler called>
+#13 0x0b9fc792 in ?? ()
+#14 0x0b9fc788 in ?? ()
+#15 0x00000000 in ?? ()
+129 FSDB Dumper for IUS, Release Verdi3_2013.07, Linux, 07/04/2013
+130 (C) 1996 - 2013 by Synopsys, Inc.
+131 sps_call_fsdbDumpfile at 0 : /home/M10912039/GitHub/CIC_2020_grad/tb_term.sv(42)
+132 argv[0]: SME.fsdb
+133 *Verdi3* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+134 *Verdi3* : Create FSDB file 'SME.fsdb'
+135 sps_call_fsdbDumpvars at 0 : /home/M10912039/GitHub/CIC_2020_grad/tb_term.sv(43)
+136 *Verdi3* : Begin traversing the scopes, layer (0).
+137 Cell instance `testfixture.u_SME.U3220'.
+138 *Verdi3* : End of traversing.
+139 fsdbDumpvars traverse var: profile - 
+          CPU/Mem usage: 0.030 sys,  0.190 user,  192.81M sys,  0.00M vm
+                   incr: 0.000 sys,  0.140 user,  6.88M sys,  0.00M vm
+                   accu: 0.000 sys,  0.140 user,  6.88M sys,  0.00M vm
+              accu incr: 0.000 sys,  0.140 user,  6.88M sys,  0.00M vm
+
+          Count usage: 18820 var,  6075 idcode,  6075 callback
+                 incr: 18820 var,  6075 idcode,  6075 callback
+                 accu: 18820 var,  6075 idcode,  6075 callback
+            accu incr: 18820 var,  6075 idcode,  6075 callback
+140 VC callback profile - scalar:0 vector:0
+141 Mon Sep  7 00:17:18 2020
+142 fsdbDumpvars: profile - 
+          CPU/Mem usage: 0.030 sys,  0.200 user,  193.86M sys,  0.00M vm
+                   incr: 0.000 sys,  0.010 user,  1.05M sys,  0.00M vm
+                   accu: 0.000 sys,  0.150 user,  7.93M sys,  0.00M vm
+              accu incr: 0.000 sys,  0.010 user,  1.05M sys,  0.00M vm
+
+          Count usage: 18820 var,  6075 idcode,  6075 callback
+                 incr: 0 var,  0 idcode,  0 callback
+                 accu: 18820 var,  6075 idcode,  6075 callback
+            accu incr: 0 var,  0 idcode,  0 callback
+143 VC callback profile - scalar:6062 vector:13
+144 Mon Sep  7 00:17:18 2020
+145 sps_call_fsdbDumpMDA at 0 : /home/M10912039/GitHub/CIC_2020_grad/tb_term.sv(44)
+146 *Verdi3* : Begin traversing the MDAs, layer (0).
+147 *Verdi3* : Enable +mda and +packedmda dumping.
+148 Cell instance `testfixture.u_SME.U3220'.
+149 *Verdi3* : End of traversing the MDAs.
+150 fsdbDumpMDA traverse var: profile - 
+          CPU/Mem usage: 0.030 sys,  0.230 user,  194.02M sys,  0.00M vm
+                   incr: 0.000 sys,  0.030 user,  0.16M sys,  0.00M vm
+                   accu: 0.000 sys,  0.030 user,  0.16M sys,  0.00M vm
+              accu incr: 0.000 sys,  0.030 user,  0.16M sys,  0.00M vm
+
+          Count usage: 18820 var,  6075 idcode,  6075 callback
+                 incr: 0 var,  0 idcode,  0 callback
+                 accu: 0 var,  0 idcode,  0 callback
+            accu incr: 0 var,  0 idcode,  0 callback
+151 VC callback profile - scalar:6062 vector:13
+152 Mon Sep  7 00:17:18 2020
+153 fsdbDumpMDA: profile - 
+          CPU/Mem usage: 0.030 sys,  0.230 user,  194.02M sys,  0.00M vm
+                   incr: 0.000 sys,  0.000 user,  0.00M sys,  0.00M vm
+                   accu: 0.000 sys,  0.030 user,  0.16M sys,  0.00M vm
+              accu incr: 0.000 sys,  0.000 user,  0.00M sys,  0.00M vm
+
+          Count usage: 18820 var,  6075 idcode,  6075 callback
+                 incr: 0 var,  0 idcode,  0 callback
+                 accu: 0 var,  0 idcode,  0 callback
+            accu incr: 0 var,  0 idcode,  0 callback
+154 VC callback profile - scalar:6062 vector:13
+155 Mon Sep  7 00:17:18 2020
+156 Sim process exit

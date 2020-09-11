@@ -1,6 +1,6 @@
 -sv tb_term.sv 
-SME.v 
+SME_syn.v 
 +access+r 
-#-v /cad/CBDK/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v 
-#+define+SDF 
-#+ncmaxdelays
+-v tsmc13_neg.v 
++define+SDF 
++ncmaxdelays

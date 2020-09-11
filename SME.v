@@ -527,12 +527,12 @@ begin
             4'd1:
             begin
                 if(patternTempAfter[7:0] == stringBuffer[ 7:0]) match_after = 1'd1;
-                else match_front = 1'd0;  
+                else match_after = 1'd0;  
             end
             4'd2:
             begin
                 if(patternTempAfter[15:0] == stringBuffer[15:0]) match_after = 1'd1;
-                else match_front = 1'd0;
+                else match_after = 1'd0;
             end
             4'd3:
             begin

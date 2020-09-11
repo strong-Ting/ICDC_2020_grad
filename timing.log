@@ -1,0 +1,95 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : SME
+Version: H-2013.03-SP5
+Date   : Mon Sep  7 00:17:06 2020
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: match_index_reg[3]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: match_index_reg[4]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SME                tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  match_index_reg[3]/CK (DFFSRXL)          0.00       0.50 r
+  match_index_reg[3]/QN (DFFSRXL)          0.96       1.46 r
+  U6153/Y (CLKBUFX3)                       0.40       1.86 r
+  U4842/Y (NAND2X4)                        0.32       2.18 f
+  U4807/Y (BUFX4)                          0.27       2.45 f
+  U4839/Y (INVX3)                          0.19       2.64 r
+  U5455/Y (CLKBUFX3)                       0.24       2.88 r
+  U5109/Y (INVX3)                          0.40       3.28 f
+  U6417/Y (OAI221XL)                       0.88       4.16 r
+  U6428/Y (OAI221XL)                       0.40       4.56 f
+  U6427/Y (CLKINVX1)                       0.28       4.84 r
+  U6411/Y (OAI222X1)                       0.35       5.18 f
+  U3906/Y (OAI221X2)                       0.55       5.73 r
+  U5058/Y (CLKINVX1)                       0.42       6.15 f
+  U5145/Y (OAI22XL)                        0.48       6.62 r
+  U5567/Y (XOR2X1)                         0.36       6.98 f
+  U5565/Y (NOR4X1)                         0.34       7.32 r
+  U5089/Y (NAND4X1)                        0.34       7.66 f
+  U5134/Y (NOR3X1)                         0.36       8.03 r
+  U5561/Y (NAND4X1)                        0.48       8.50 f
+  U5055/Y (NOR3BX2)                        0.26       8.76 r
+  U5556/Y (NAND4X1)                        0.44       9.20 f
+  U5117/Y (NOR3X1)                         0.39       9.59 r
+  U6029/Y (NAND4X1)                        0.56      10.15 f
+  U5136/Y (NOR3X1)                         0.43      10.58 r
+  U5548/Y (NAND4X1)                        0.56      11.14 f
+  U5135/Y (NOR3X1)                         0.43      11.56 r
+  U6025/Y (NAND4X1)                        0.55      12.11 f
+  U5137/Y (NOR3X1)                         0.42      12.53 r
+  U6037/Y (NAND4X1)                        0.44      12.97 f
+  U5204/Y (NOR4XL)                         0.72      13.70 r
+  U6034/Y (AOI32X1)                        0.25      13.94 f
+  U5152/Y (OAI32X1)                        0.36      14.30 r
+  U5153/Y (AOI221XL)                       0.23      14.53 f
+  U5130/Y (OAI22XL)                        0.55      15.08 r
+  U5131/Y (OAI211X1)                       0.44      15.52 f
+  U6070/Y (AO21X1)                         0.45      15.98 f
+  U5098/Y (OAI21X4)                        0.11      16.09 r
+  U4845/Y (NAND3X2)                        0.13      16.22 f
+  U3365/Y (OAI211X2)                       0.29      16.50 r
+  U5709/Y (NAND3BX1)                       0.25      16.75 f
+  U5708/Y (CLKBUFX3)                       0.56      17.31 f
+  U4828/Y (INVX3)                          0.46      17.77 r
+  U6349/Y (OAI32X4)                        0.41      18.19 f
+  U5138/Y (CLKINVX1)                       0.19      18.37 r
+  U6352/Y (OAI211X1)                       0.44      18.81 f
+  U5967/Y (OA21XL)                         0.50      19.31 f
+  U6383/Y (OA21XL)                         0.33      19.64 f
+  U6381/Y (OAI221XL)                       0.44      20.08 r
+  match_index_reg[4]/D (DFFRX1)            0.00      20.08 r
+  data arrival time                                  20.08
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.50      20.50
+  clock uncertainty                       -0.10      20.40
+  match_index_reg[4]/CK (DFFRX1)           0.00      20.40 r
+  library setup time                      -0.30      20.10
+  data required time                                 20.10
+  -----------------------------------------------------------
+  data required time                                 20.10
+  data arrival time                                 -20.08
+  -----------------------------------------------------------
+  slack (MET)                                         0.02
+
+
+1

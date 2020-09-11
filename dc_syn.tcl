@@ -1,5 +1,5 @@
 #Read All Files
-read_file -format verilog  SME.v
+read_file -format verilog SME.v
 current_design SME
 link
 
