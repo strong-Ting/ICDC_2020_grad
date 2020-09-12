@@ -1,0 +1,1 @@
+-sv tb_term.sv ../syn/SME_syn.v -v /usr/cad/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v +define+SDF

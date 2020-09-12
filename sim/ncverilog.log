@@ -1,0 +1,584 @@
+ncverilog: 15.20-s039: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
+TOOL:	ncverilog	15.20-s039: Started on Sep 12, 2020 at 17:52:01 CST
+ncverilog
+	-f ncvlog.f
+		-sv
+		tb_term.sv
+		../syn/SME_syn.v
+		-v
+		/usr/cad/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v
+		+define+SDF
+file: tb_term.sv
+	module worklib.testfixture:sv
+		errors: 0, warnings: 0
+file: ../syn/SME_syn.v
+	module worklib.SME_DW01_sub_0_DW01_sub_2:v
+		errors: 0, warnings: 0
+	module worklib.SME_DW01_add_2:v
+		errors: 0, warnings: 0
+	module worklib.SME:v
+		errors: 0, warnings: 0
+file: /usr/cad/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v
+	module tsmc13_neg.INVX3:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AND2X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AND3X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AND4X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AOI211X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AOI22X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AOI221XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AOI222XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AOI32X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AOI33X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AOI2BB1X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AOI2BB2X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AO21X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AO22X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.MXI2XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.MXI2X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.MX3XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NAND2X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NAND2X2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NAND3X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NAND4X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NAND2BX1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NAND3BX1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NAND4BX1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NAND4BBXL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NOR2X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NOR3X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NOR4X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NOR2BX1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NOR3BXL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OR2X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OR3X2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI21XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI211X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI22XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI221XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI222XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI31XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI32X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI2BB1X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI2BB2XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OA21XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OA22X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.XOR2X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.XOR3X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.XNOR2X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.CLKBUFX3:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.CLKINVX1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.CLKMX2X2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.ADDFXL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.DFFQX1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.DFFRX1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.DFFRX2:v
+		errors: 0, warnings: 0
+	primitive tsmc13_neg.udp_mux2:v
+		errors: 0, warnings: 0
+	primitive tsmc13_neg.udp_mux4:v
+		errors: 0, warnings: 0
+	primitive tsmc13_neg.udp_dff:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+		Caching library 'tsmc13_neg' ....... Done
+	Elaborating the design hierarchy:
+  SME_DW01_sub_0_DW01_sub_2 r1055 ( .A(stringNum), .B({1'b0, 1'b0, \U3/U1/Z_3 , 
+                                |
+ncelab: *W,CUVWSP (../syn/SME_syn.v,301|32): 1 output port was not connected:
+ncelab: (../syn/SME_syn.v,8): CO
+
+  SME_DW01_add_2 add_0_root_add_92_2 ( .A({N286, N285, N284, N283, N282, N281}), .B({N292, N292, N290, N289, N288, N287}), .CI(1'b0), .SUM({N298, N297, N296, 
+                                   |
+ncelab: *W,CUVWSP (../syn/SME_syn.v,304|35): 1 output port was not connected:
+ncelab: (../syn/SME_syn.v,34): CO
+
+  DFFRX1 \stringData_reg[25]  ( .D(n1841), .CK(clk), .RN(n2119), .QN(n3753) );
+                            |
+ncelab: *W,CUVWSP (../syn/SME_syn.v,312|28): 1 output port was not connected:
+ncelab: (/usr/cad/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): Q
+
+  DFFRX1 \stringData_reg[26]  ( .D(n1842), .CK(clk), .RN(n2119), .QN(n3754) );
+                            |
+ncelab: *W,CUVWSP (../syn/SME_syn.v,313|28): 1 output port was not connected:
+ncelab: (/usr/cad/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): Q
+
+  DFFRX1 \stringData_reg[27]  ( .D(n1843), .CK(clk), .RN(n2119), .QN(n3755) );
+                            |
+ncelab: *W,CUVWSP (../syn/SME_syn.v,314|28): 1 output port was not connected:
+ncelab: (/usr/cad/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): Q
+
+  DFFRX1 \stringData_reg[28]  ( .D(n1844), .CK(clk), .RN(n2119), .QN(n3756) );
+                            |
+ncelab: *W,CUVWSP (../syn/SME_syn.v,315|28): 1 output port was not connected:
+ncelab: (/usr/cad/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): Q
+
+  DFFRX1 \stringData_reg[29]  ( .D(n1845), .CK(clk), .RN(n2119), .QN(n3757) );
+                            |
+ncelab: *W,CUVWSP (../syn/SME_syn.v,316|28): 1 output port was not connected:
+ncelab: (/usr/cad/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): Q
+
+  DFFRX1 \stringData_reg[30]  ( .D(n1846), .CK(clk), .RN(n2119), .QN(n3758) );
+                            |
+ncelab: *W,CUVWSP (../syn/SME_syn.v,317|28): 1 output port was not connected:
+ncelab: (/usr/cad/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): Q
+
+  DFFRX1 \stringData_reg[31]  ( .D(n1847), .CK(clk), .RN(n2119), .QN(n3759) );
+                            |
+ncelab: *W,CUVWSP (../syn/SME_syn.v,318|28): 1 output port was not connected:
+ncelab: (/usr/cad/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): Q
+
+  DFFRX1 \stringData_reg[24]  ( .D(n1848), .CK(clk), .RN(n2119), .QN(n3752) );
+                            |
+ncelab: *W,CUVWSP (../syn/SME_syn.v,319|28): 1 output port was not connected:
+ncelab: (/usr/cad/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): Q
+
+  DFFRX1 \stringData_reg[17]  ( .D(n1849), .CK(clk), .RN(n2098), .QN(n3745) );
+                            |
+ncelab: *W,CUVWSP (../syn/SME_syn.v,320|28): 1 output port was not connected:
+ncelab: (/usr/cad/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): Q
+
+  DFFRX1 \stringData_reg[18]  ( .D(n1850), .CK(clk), .RN(n2098), .QN(n3746) );
+                            |
+ncelab: *W,CUVWSP (../syn/SME_syn.v,321|28): 1 output port was not connected:
+ncelab: (/usr/cad/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): Q
+
+  DFFRX1 \stringData_reg[19]  ( .D(n1851), .CK(clk), .RN(n2098), .QN(n3747) );
+                            |
+ncelab: *W,CUVWSP (../syn/SME_syn.v,322|28): 1 output port was not connected:
+ncelab: (/usr/cad/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): Q
+
+  DFFRX1 \stringData_reg[20]  ( .D(n1852), .CK(clk), .RN(n2098), .QN(n3748) );
+                            |
+ncelab: *W,CUVWSP (../syn/SME_syn.v,323|28): 1 output port was not connected:
+ncelab: (/usr/cad/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): Q
+
+  DFFRX1 \stringData_reg[21]  ( .D(n1853), .CK(clk), .RN(n2098), .QN(n3749) );
+                            |
+ncelab: *W,CUVWSP (../syn/SME_syn.v,324|28): 1 output port was not connected:
+ncelab: (/usr/cad/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): Q
+
+  DFFRX1 \stringData_reg[22]  ( .D(n1854), .CK(clk), .RN(n2098), .QN(n3750) );
+                            |
+ncelab: *W,CUVWSP (../syn/SME_syn.v,325|28): 1 output port was not connected:
+ncelab: (/usr/cad/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): Q
+
+  DFFRX1 \stringData_reg[23]  ( .D(n1855), .CK(clk), .RN(n2098), .QN(n3751) );
+                            |
+ncelab: *W,CUVWSP (../syn/SME_syn.v,326|28): 1 output port was not connected:
+ncelab: (/usr/cad/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): Q
+
+  DFFRX1 \stringData_reg[16]  ( .D(n1856), .CK(clk), .RN(n2098), .QN(n3744) );
+                            |
+ncelab: *W,CUVWSP (../syn/SME_syn.v,327|28): 1 output port was not connected:
+ncelab: (/usr/cad/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): Q
+
+  DFFRX1 \pattern_reg[48]  ( .D(n1898), .CK(clk), .RN(n2097), .QN(n2015) );
+                         |
+ncelab: *W,CUVWSP (../syn/SME_syn.v,472|25): 1 output port was not connected:
+ncelab: (/usr/cad/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): Q
+
+  DFFRX1 \pattern_reg[9]  ( .D(n1931), .CK(clk), .RN(n2094), .QN(n2007) );
+                        |
+ncelab: *W,CUVWSP (../syn/SME_syn.v,473|24): 1 output port was not connected:
+ncelab: (/usr/cad/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): Q
+
+  DFFRX1 \pattern_reg[10]  ( .D(n1932), .CK(clk), .RN(n2094), .QN(n1952) );
+                         |
+ncelab: *W,CUVWSP (../syn/SME_syn.v,474|25): 1 output port was not connected:
+ncelab: (/usr/cad/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): Q
+
+  DFFRX1 \pattern_reg[11]  ( .D(n1933), .CK(clk), .RN(n2094), .QN(n1972) );
+                         |
+ncelab: *W,CUVWSP (../syn/SME_syn.v,475|25): 1 output port was not connected:
+ncelab: (/usr/cad/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): Q
+
+  DFFRX1 \pattern_reg[13]  ( .D(n1935), .CK(clk), .RN(n2093), .QN(n1953) );
+                         |
+ncelab: *W,CUVWSP (../syn/SME_syn.v,476|25): 1 output port was not connected:
+ncelab: (/usr/cad/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): Q
+
+  DFFRX1 \matc_indexTemp_reg[2]  ( .D(n1546), .CK(clk), .RN(n2120), .QN(n2057)
+                               |
+ncelab: *W,CUVWSP (../syn/SME_syn.v,477|31): 1 output port was not connected:
+ncelab: (/usr/cad/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): Q
+
+  DFFRX1 \matc_indexTemp_reg[3]  ( .D(n1548), .CK(clk), .RN(n2120), .QN(n2062)
+                               |
+ncelab: *W,CUVWSP (../syn/SME_syn.v,479|31): 1 output port was not connected:
+ncelab: (/usr/cad/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): Q
+
+  DFFRX1 \matc_indexTemp_reg[0]  ( .D(n1550), .CK(clk), .RN(n2120), .QN(n2061)
+                               |
+ncelab: *W,CUVWSP (../syn/SME_syn.v,481|31): 1 output port was not connected:
+ncelab: (/usr/cad/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): Q
+
+  DFFRX1 \matc_indexTemp_reg[4]  ( .D(n1552), .CK(clk), .RN(n2120), .QN(n2060)
+                               |
+ncelab: *W,CUVWSP (../syn/SME_syn.v,483|31): 1 output port was not connected:
+ncelab: (/usr/cad/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): Q
+
+  DFFRX1 \matc_indexTemp_reg[1]  ( .D(n1554), .CK(clk), .RN(n2120), .QN(n2045)
+                               |
+ncelab: *W,CUVWSP (../syn/SME_syn.v,485|31): 1 output port was not connected:
+ncelab: (/usr/cad/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): Q
+
+  DFFRX1 \stringCounter_reg[5]  ( .D(n1873), .CK(clk), .RN(n2119), .Q(
+                              |
+ncelab: *W,CUVWSP (../syn/SME_syn.v,1059|30): 1 output port was not connected:
+ncelab: (/usr/cad/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 match_reg ( .D(N905), .CK(clk), .RN(n2126), .Q(match) );
+                 |
+ncelab: *W,CUVWSP (../syn/SME_syn.v,1094|17): 1 output port was not connected:
+ncelab: (/usr/cad/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 valid_reg ( .D(n3760), .CK(clk), .RN(n2126), .Q(valid) );
+                 |
+ncelab: *W,CUVWSP (../syn/SME_syn.v,1095|17): 1 output port was not connected:
+ncelab: (/usr/cad/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+ncelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Reading SDF file from location "../syn/SME_syn.sdf"
+	Annotating SDF timing data:
+		Compiled SDF file:     SME_syn.sdf.X
+		Log file:              
+		Backannotation scope:  testfixture.u_SME
+		Configuration file:    
+		MTM control:           
+		Scale factors:         
+		Scale type:            
+	Annotation completed successfully...
+	SDF statistics: No. of Pathdelays = 8402  Annotated = 100.00% -- No. of Tchecks = 2454  Annotated = 100.00% 
+				        Total 	   Annotated	  Percentage
+		 Path Delays	        8402	        8402	      100.00
+		      $width	        1227	        1227	      100.00
+		  $setuphold	        1227	        1227	      100.00
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		tsmc13_neg.ADDFXL:v <0x0384da77>
+			streams:   0, words:     0
+		tsmc13_neg.CLKMX2X2:v <0x674806fb>
+			streams:   0, words:     0
+		tsmc13_neg.DFFQX1:v <0x0ce21e95>
+			streams:   0, words:     0
+		tsmc13_neg.DFFRX1:v <0x0293e415>
+			streams:   0, words:     0
+		tsmc13_neg.DFFRX1:v <0x40c6a2ad>
+			streams:   0, words:     0
+		tsmc13_neg.DFFRX1:v <0x4d1f184e>
+			streams:   0, words:     0
+		tsmc13_neg.DFFRX2:v <0x5051e3d2>
+			streams:   0, words:     0
+		tsmc13_neg.MX3XL:v <0x3c7b2014>
+			streams:   0, words:     0
+		tsmc13_neg.MXI2X1:v <0x424f3420>
+			streams:   0, words:     0
+		tsmc13_neg.MXI2XL:v <0x0766d5b6>
+			streams:   0, words:     0
+		tsmc13_neg.XNOR2X1:v <0x6c44b1b9>
+			streams:   0, words:     0
+		tsmc13_neg.XOR2X1:v <0x135bd7f4>
+			streams:   0, words:     0
+		tsmc13_neg.XOR3X1:v <0x1fddcb32>
+			streams:   0, words:     0
+		worklib.SME:v <0x51ca4a4c>
+			streams:   0, words:     0
+		worklib.\$unit_0x4e7fd5dd :compilation_unit <0x38bcb922>
+			streams:   1, words:  6032
+		worklib.testfixture:sv <0x10200a89>
+			streams:  16, words: 20445
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                    Instances  Unique
+		Modules:                 2328      57
+		UDPs:                     827       3
+		Primitives:              5289       8
+		Timing outputs:          2708      22
+		Registers:                440      33
+		Scalar wires:            3127       -
+		Expanded wires:             8       1
+		Always blocks:              5       5
+		Initial blocks:            11      11
+		Pseudo assignments:         1       1
+		Timing checks:           3681     483
+		Interconnect:            7046       -
+		Delayed tcheck signals:  1227     446
+		Compilation units:          1       1
+		Simulation timescale:     1ps
+	Writing initial simulation snapshot: worklib.testfixture:sv
+Loading snapshot worklib.testfixture:sv .................... Done
+ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+*Verdi* Loading libsscore_ius152.so
+ncsim> source /usr/cad/cadence/INCISIV/cur/tools/inca/files/ncsimrc
+ncsim> run
+FSDB Dumper for IUS, Release Verdi_Q-2020.03, Linux, 02/09/2020
+(C) 1996 - 2020 by Synopsys, Inc.
+*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi* : Create FSDB file 'SME.fsdb'
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.char_count(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.clk(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.reset(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.chardata(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.isstring(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.ispattern(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.cycle(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.strindex(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.goldmatch_index(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.goldmatch(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.valid_reg(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.wait_valid(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.getmatch(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.getmatch_index(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.score(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.allpass(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.valid(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.match(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.match_index(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.chardata(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.match_index(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.clk(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.reset(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.isstring(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.ispattern(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.valid(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.match(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.special(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.N239(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.N240(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.N241(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.N242(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.N243(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.N244(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.N281(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.N282(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.N283(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.N284(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.N285(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.N286(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.N287(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.N288(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.N289(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.N290(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.N292(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.N293(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.N294(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.N295(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.N296(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.N297(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.N298(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.N905(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.\U3/U1/Z_0 (36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.\U3/U1/Z_1 (36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.\U3/U1/Z_2 (36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.\U3/U1/Z_3 (36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.\U3/U2/Z_0 (36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.n484(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.n485(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.n486(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.n586(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.n588(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.n589(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.n590(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.n591(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.n729(36)
+*Verdi* WARNING: The above messages are printed 50 times. No more similar message will be printed out.
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_SME.n1545(36)
+*Verdi* : End of traversing.
+*Verdi* : Begin traversing the MDAs, layer (0).
+*Verdi* : Enable +mda and +packedmda dumping.
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.char_count(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.clk(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.reset(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.chardata(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.isstring(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.ispattern(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.cycle(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.strindex(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.goldmatch_index(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.goldmatch(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.valid_reg(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.wait_valid(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.getmatch(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.getmatch_index(48)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.score(25)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.allpass(25)
+*Verdi* : End of traversing the MDAs.
+----------------------
+-- Simulation Start --
+----------------------
+  __________________________________________________________
+  == String 1  "abcdijk lmnop q rstuv"
+  -- Pattern 1  "1234"
+       cycle 30, expect(0,00) , get(0,11) >> Pass
+  -- Pattern 2  "abcd"
+       cycle 36, expect(1,00) , get(1,00) >> Pass
+  -- Pattern 3  "dijk"
+       cycle 3f, expect(1,03) , get(1,03) >> Pass
+  -- Pattern 4  "pqrst"
+       cycle 56, expect(0,00) , get(0,10) >> Pass
+  -- Pattern 5  "pqr.t"
+       cycle 6d, expect(0,00) , get(0,10) >> Pass
+  -- Pattern 6  "c...k"
+       cycle 76, expect(1,02) , get(1,02) >> Pass
+  -- Pattern 7  "^lmno"
+       cycle 84, expect(1,08) , get(1,08) >> Pass
+  -- Pattern 8  "rstuv$"
+       cycle 9c, expect(1,10) , get(1,10) >> Pass
+  -- Pattern 9  "^rmn"
+       cycle b4, expect(0,00) , get(0,12) >> Pass
+  -- Pattern a  "ijk l$"
+       cycle cc, expect(0,00) , get(0,10) >> Pass
+  -- Pattern b  "v"
+       cycle e3, expect(1,14) , get(1,14) >> Pass
+  -- Pattern c  "lmnoprst"
+       cycle fa, expect(0,00) , get(0,0d) >> Pass
+  -- Pattern d  "^ijk$"
+       cycle 112, expect(0,00) , get(0,11) >> Pass
+  -- Pattern e  "^q$"
+       cycle 124, expect(1,0e) , get(1,0e) >> Pass
+  __________________________________________________________
+  == String 2  "2x1=2 2x2=4 2x3=6"
+  -- Pattern 1  "^2.2.2"
+       cycle 148, expect(0,00) , get(0,0b) >> Pass
+  -- Pattern 2  "2.2.2"
+       cycle 153, expect(1,04) , get(1,04) >> Pass
+  -- Pattern 3  "^2.2.4$"
+       cycle 161, expect(1,06) , get(1,06) >> Pass
+  -- Pattern 4  "."
+       cycle 164, expect(1,00) , get(1,00) >> Pass
+  -- Pattern 5  "^.."
+       cycle 169, expect(1,00) , get(1,00) >> Pass
+  -- Pattern 6  "^.$"
+       cycle 17d, expect(0,00) , get(0,0f) >> Pass
+  -- Pattern 7  "2.$"
+       cycle 191, expect(0,00) , get(0,0f) >> Pass
+  -- Pattern 8  "2x4=7"
+       cycle 1a5, expect(0,00) , get(0,0d) >> Pass
+  -- Pattern 9  "3=6-3"
+       cycle 1b9, expect(0,00) , get(0,0d) >> Pass
+  -- Pattern a  "1.2=2"
+       cycle 1cd, expect(0,00) , get(0,0d) >> Pass
+  -- Pattern b  "2*2=4"
+       cycle 1dc, expect(1,00) , get(1,00) >> Pass
+  __________________________________________________________
+  == String 3  "She sees cheese"
+  -- Pattern 1  "ees."
+       cycle 1f6, expect(1,05) , get(1,05) >> Pass
+  -- Pattern 2  "ees.$"
+       cycle 208, expect(1,0b) , get(1,0b) >> Pass
+  -- Pattern 3  "e..se"
+       cycle 219, expect(0,00) , get(0,0a) >> Pass
+  -- Pattern 4  "e..ee$"
+       cycle 22b, expect(0,00) , get(0,0a) >> Pass
+  -- Pattern 5  "^ees*"
+       cycle 23d, expect(0,00) , get(0,0c) >> Pass
+  -- Pattern 6  "hee*se"
+       cycle 250, expect(1,0a) , get(1,0a) >> Pass
+  -- Pattern 7  "he.s"
+       cycle 257, expect(1,01) , get(1,01) >> Pass
+  -- Pattern 8  "*see$"
+       cycle 26a, expect(0,00) , get(0,0a) >> Pass
+  -- Pattern 9  "se*ce"
+       cycle 27e, expect(0,00) , get(0,04) >> Pass
+  __________________________________________________________
+  == String 4  "But she said the butter's bitter"
+  -- Pattern 1  "sa*said"
+       cycle 2c3, expect(0,00) , get(0,08) >> Pass
+  -- Pattern 2  "b*tter"
+       cycle 2de, expect(1,11) , get(1,11) >> Pass
+  -- Pattern 3  "b*tter$"
+       cycle 303, expect(1,11) , get(1,11) >> Pass
+  -- Pattern 4  "ut*r"
+       cycle 31e, expect(1,01) , get(1,01) >> Pass
+  -- Pattern 5  "ut*tted"
+       cycle 343, expect(0,00) , get(0,01) >> Pass
+  -- Pattern 6  "^ut*tter"
+       cycle 369, expect(0,00) , get(0,1d) >> Pass
+  -- Pattern 7  "*tered"
+       cycle 38d, expect(0,00) , get(0,01) >> Pass
+  __________________________________________________________
+  == String 5  "He threw three free throws"
+  -- Pattern 1  "thr*the$"
+       cycle 3c6, expect(0,00) , get(0,03) >> Pass
+  -- Pattern 2  "^thro*th"
+       cycle 3e5, expect(0,00) , get(0,13) >> Pass
+  -- Pattern 3  ".ree th"
+       cycle 3fd, expect(1,0f) , get(1,0f) >> Pass
+  -- Pattern 4  ".ree  fr"
+       cycle 419, expect(0,00) , get(0,12) >> Pass
+  -- Pattern 5  ".ree *re"
+       cycle 42f, expect(1,0a) , get(1,0a) >> Pass
+  -- Pattern 6  "re. thr"
+       cycle 43d, expect(1,05) , get(1,05) >> Pass
+  -- Pattern 7  "ee*ee fr"
+       cycle 45c, expect(0,00) , get(0,0c) >> Pass
+  -- Pattern 8  "ee*ee th"
+       cycle 476, expect(1,0c) , get(1,0c) >> Pass
+  -- Pattern 9  "re*ee.$"
+       cycle 495, expect(0,00) , get(0,05) >> Pass
+  -- Pattern a  "^...$"
+       cycle 4b2, expect(0,00) , get(0,16) >> Pass
+  -- Pattern b  "^....$"
+       cycle 4c8, expect(1,0f) , get(1,0f) >> Pass
+----------------------------------
+-- Simulation finish, ALL PASS  --
+-- cycle =1225 , Score =100       --
+----------------------------------
+Simulation complete via $finish(1) at time 24500 NS + 0
+./tb_term.sv:201                     $finish;
+ncsim> exit
+TOOL:	ncverilog	15.20-s039: Exiting on Sep 12, 2020 at 17:52:11 CST  (total: 00:00:10)

@@ -1,0 +1,10 @@
+s1(12Sep2020:17:35:04):  ncverilog ../src/tb_term.sv ../src/SME.v 
+s2(12Sep2020:17:40:12):  ncverilog ../src/tb_term.sv ../src/SME.v 
+s3(12Sep2020:17:41:26):  ncverilog ../src/tb_term.sv ../src/SME.v 
+s4(12Sep2020:17:46:12):  ncverilog ../src/tb_term.sv ../syn/SME_syn.v +define+SDF 
+s5(12Sep2020:17:47:19):  ncverilog ../src/tb_term.sv ../syn/SME_syn.v -v /usr/cad/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v +define+SDF 
+s6(12Sep2020:17:47:39):  ncverilog ../src/tb_term.sv ../syn/SME_syn.v -v /usr/cad/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v +define+SDF 
+s7(12Sep2020:17:47:56):  ncverilog -f ncvlog.f 
+s8(12Sep2020:17:51:27):  ncverilog ncvlog.f 
+s9(12Sep2020:17:51:45):  ncverilog ncvlog.f 
+s10(12Sep2020:17:52:01):  ncverilog -f ncvlog.f 
