@@ -83,9 +83,9 @@ argv[2]=tb_term.sv
 argv[3]=../src/SME.v
 argv[4]=+access+r
 84 profile - 100
-          CPU/Mem usage: 0.030 sys,  0.040 user,  61.79M sys,  0.00M vm
+          CPU/Mem usage: 0.040 sys,  0.040 user,  61.80M sys,  0.00M vm
 85 VC callback profile - scalar:0 vector:0
-86 Wed Mar  3 23:57:39 2021
+86 Thu Mar  4 00:41:58 2021
 87 pliAppInit
 88 FSDB_GATE is disabled.
 89 Enable Parallel Dumping.
@@ -103,66 +103,66 @@ argv[4]=+access+r
 101 *Verdi* : Begin traversing the scopes, layer (0).
 102 *Verdi* : End of traversing.
 103 fsdbDumpvars traverse var: profile - 
-          CPU/Mem usage: 0.040 sys,  0.050 user,  144.33M sys,  0.00M vm
-                   incr: 0.000 sys,  0.000 user,  3.67M sys,  0.00M vm
-                   accu: 0.000 sys,  0.000 user,  3.67M sys,  0.00M vm
-              accu incr: 0.000 sys,  0.000 user,  3.67M sys,  0.00M vm
+          CPU/Mem usage: 0.040 sys,  0.050 user,  144.20M sys,  0.00M vm
+                   incr: 0.000 sys,  0.000 user,  3.54M sys,  0.00M vm
+                   accu: 0.000 sys,  0.000 user,  3.54M sys,  0.00M vm
+              accu incr: 0.000 sys,  0.000 user,  3.54M sys,  0.00M vm
 
-          Count usage: 41 var,  41 idcode,  41 callback
-                 incr: 41 var,  41 idcode,  41 callback
-                 accu: 41 var,  41 idcode,  41 callback
-            accu incr: 41 var,  41 idcode,  41 callback
+          Count usage: 42 var,  42 idcode,  42 callback
+                 incr: 42 var,  42 idcode,  42 callback
+                 accu: 42 var,  42 idcode,  42 callback
+            accu incr: 42 var,  42 idcode,  42 callback
 104 VC callback profile - scalar:0 vector:0
-105 Wed Mar  3 23:57:39 2021
+105 Thu Mar  4 00:41:58 2021
 106 fsdbDumpvars: profile - 
-          CPU/Mem usage: 0.040 sys,  0.050 user,  145.38M sys,  0.00M vm
-                   incr: 0.000 sys,  0.000 user,  1.05M sys,  0.00M vm
+          CPU/Mem usage: 0.040 sys,  0.050 user,  145.39M sys,  0.00M vm
+                   incr: 0.000 sys,  0.000 user,  1.19M sys,  0.00M vm
                    accu: 0.000 sys,  0.000 user,  4.73M sys,  0.00M vm
-              accu incr: 0.000 sys,  0.000 user,  1.05M sys,  0.00M vm
+              accu incr: 0.000 sys,  0.000 user,  1.19M sys,  0.00M vm
 
-          Count usage: 41 var,  41 idcode,  41 callback
+          Count usage: 42 var,  42 idcode,  42 callback
                  incr: 0 var,  0 idcode,  0 callback
-                 accu: 41 var,  41 idcode,  41 callback
+                 accu: 42 var,  42 idcode,  42 callback
             accu incr: 0 var,  0 idcode,  0 callback
-107 VC callback profile - scalar:17 vector:24
-108 Wed Mar  3 23:57:39 2021
+107 VC callback profile - scalar:17 vector:25
+108 Thu Mar  4 00:41:58 2021
 109 sps_call_fsdbDumpMDA at 0 : /home/DICS_LAB/M10912039/CIC/CIC_2020_grad/version_2/sim/tb_term.sv(44)
 110 *Verdi* : Begin traversing the MDAs, layer (0).
 111 *Verdi* : Enable +mda and +packedmda dumping.
 112 *Verdi* : End of traversing the MDAs.
 113 fsdbDumpMDA traverse var: profile - 
-          CPU/Mem usage: 0.040 sys,  0.050 user,  145.38M sys,  0.00M vm
+          CPU/Mem usage: 0.040 sys,  0.050 user,  145.39M sys,  0.00M vm
                    incr: 0.000 sys,  0.000 user,  0.00M sys,  0.00M vm
                    accu: 0.000 sys,  0.000 user,  0.00M sys,  0.00M vm
               accu incr: 0.000 sys,  0.000 user,  0.00M sys,  0.00M vm
 
-          Count usage: 81 var,  81 idcode,  81 callback
+          Count usage: 82 var,  82 idcode,  82 callback
                  incr: 40 var,  40 idcode,  40 callback
                  accu: 40 var,  40 idcode,  40 callback
             accu incr: 40 var,  40 idcode,  40 callback
-114 VC callback profile - scalar:17 vector:24
-115 Wed Mar  3 23:57:40 2021
+114 VC callback profile - scalar:17 vector:25
+115 Thu Mar  4 00:41:58 2021
 116 fsdbDumpMDA: profile - 
-          CPU/Mem usage: 0.040 sys,  0.050 user,  145.38M sys,  0.00M vm
+          CPU/Mem usage: 0.040 sys,  0.050 user,  145.39M sys,  0.00M vm
                    incr: 0.000 sys,  0.000 user,  0.00M sys,  0.00M vm
                    accu: 0.000 sys,  0.000 user,  0.00M sys,  0.00M vm
               accu incr: 0.000 sys,  0.000 user,  0.00M sys,  0.00M vm
 
-          Count usage: 81 var,  81 idcode,  81 callback
+          Count usage: 82 var,  82 idcode,  82 callback
                  incr: 0 var,  0 idcode,  0 callback
                  accu: 40 var,  40 idcode,  40 callback
             accu incr: 0 var,  0 idcode,  0 callback
-117 VC callback profile - scalar:17 vector:64
-118 Wed Mar  3 23:57:40 2021
-119 End of simulation at 3284000
-120 VC callback profile - scalar:7413 vector:7865
-121 Wed Mar  3 23:57:40 2021
+117 VC callback profile - scalar:17 vector:65
+118 Thu Mar  4 00:41:58 2021
+119 End of simulation at 3706000
+120 VC callback profile - scalar:8269 vector:9046
+121 Thu Mar  4 00:41:59 2021
 122 Begin FSDB profile info:
-123 FSDB Writer : bc1(7413) bcn(7865) mtf/stf(0/0)
-FSDB Writer elapsed time : flush(0.145542) io wait(0.000000) theadpool wait(0.000000)
+123 FSDB Writer : bc1(8269) bcn(9046) mtf/stf(0/0)
+FSDB Writer elapsed time : flush(0.148469) io wait(0.000000) theadpool wait(0.000000)
 FSDB Writer cpu time : MT Compression : 0
 124 End FSDB profile info
 125 Parallel profile    -  Flush:4 Expand:0 ProduceWait:0 ConsumerWait:0 BlockUsed:1
-126                        ProduceTime:0.116597295 ConsumerTime:0.000000000 Buffer:64MB
+126                        ProduceTime:0.127714906 ConsumerTime:0.000000000 Buffer:64MB
 127 SimExit
 128 Sim process exit

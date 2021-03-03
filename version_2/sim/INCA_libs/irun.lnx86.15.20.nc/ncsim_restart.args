@@ -7,7 +7,7 @@
 +EMGRLOG
 irun.log
 -XLSTIME
-1614787052
+1614789713
 -XLKEEP
 -XLMODE
 ./INCA_libs/irun.lnx86.15.20.nc
@@ -21,4 +21,4 @@ irun
 -XLVERSION
 "TOOL:	irun	15.20-s039"
 -XLNAME
-./INCA_libs/irun.lnx86.15.20.nc/dics03.ee.yuntech.edu.tw_23665
+./INCA_libs/irun.lnx86.15.20.nc/dics03.ee.yuntech.edu.tw_27407

@@ -794,3 +794,62 @@ wvSearchNext -win $_nWave2
 wvDisplayGridCount -win $_nWave2 -off
 wvGetSignalClose -win $_nWave2
 wvReloadFile -win $_nWave2
+wvDisplayGridCount -win $_nWave2 -off
+wvGetSignalClose -win $_nWave2
+wvReloadFile -win $_nWave2
+wvSelectSignal -win $_nWave2 {( "G1" 12 )} 
+wvSetPosition -win $_nWave2 {("G1" 12)}
+wvCollapseBus -win $_nWave2
+wvSetPosition -win $_nWave2 {("G1" 12)}
+wvSetPosition -win $_nWave2 {("G1" 18)}
+wvSelectSignal -win $_nWave2 {( "G1" 5 )} 
+wvSelectSignal -win $_nWave2 {( "G1" 3 )} 
+wvSetCursor -win $_nWave2 8183.867046 -snap {("G1" 3)}
+wvSearchNext -win $_nWave2
+wvSearchNext -win $_nWave2
+wvSearchNext -win $_nWave2
+wvSearchNext -win $_nWave2
+wvSearchNext -win $_nWave2
+wvSearchNext -win $_nWave2
+wvSearchNext -win $_nWave2
+wvSearchNext -win $_nWave2
+wvSearchNext -win $_nWave2
+wvSearchNext -win $_nWave2
+wvSelectSignal -win $_nWave2 {( "G1" 4 )} 
+wvSearchNext -win $_nWave2
+wvSearchNext -win $_nWave2
+wvSearchNext -win $_nWave2
+wvSearchNext -win $_nWave2
+wvSearchNext -win $_nWave2
+wvSelectSignal -win $_nWave2 {( "G1" 14 )} 
+wvSetPosition -win $_nWave2 {("G1" 14)}
+wvExpandBus -win $_nWave2
+wvSetPosition -win $_nWave2 {("G1" 26)}
+wvSelectSignal -win $_nWave2 {( "G1" 14 )} 
+wvSelectSignal -win $_nWave2 {( "G1" 14 )} 
+wvSetPosition -win $_nWave2 {("G1" 14)}
+wvCollapseBus -win $_nWave2
+wvSetPosition -win $_nWave2 {("G1" 14)}
+wvSetPosition -win $_nWave2 {("G1" 18)}
+wvSelectSignal -win $_nWave2 {( "G1" 14 )} 
+wvSetRadix -win $_nWave2 -format Ascii
+wvSelectSignal -win $_nWave2 {( "G1" 14 )} 
+wvSetPosition -win $_nWave2 {("G1" 14)}
+wvExpandBus -win $_nWave2
+wvSetPosition -win $_nWave2 {("G1" 26)}
+wvSelectSignal -win $_nWave2 {( "G1" 14 )} 
+wvSetPosition -win $_nWave2 {("G1" 14)}
+wvCollapseBus -win $_nWave2
+wvSetPosition -win $_nWave2 {("G1" 14)}
+wvSetPosition -win $_nWave2 {("G1" 18)}
+wvSelectSignal -win $_nWave2 {( "G1" 17 )} 
+wvSelectSignal -win $_nWave2 {( "G1" 19 )} 
+wvSelectSignal -win $_nWave2 {( "G1" 9 )} 
+wvDisplayGridCount -win $_nWave2 -off
+wvGetSignalClose -win $_nWave2
+wvReloadFile -win $_nWave2
+wvSetCursor -win $_nWave2 608951.478115 -snap {("G1" 20)}
+wvDisplayGridCount -win $_nWave2 -off
+wvGetSignalClose -win $_nWave2
+wvReloadFile -win $_nWave2
+wvSetCursor -win $_nWave2 3034245.240290

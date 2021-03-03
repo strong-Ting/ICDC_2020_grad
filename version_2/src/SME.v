@@ -12,6 +12,7 @@ reg match,valid;
 reg [4:0] match_index;
 reg [5:0] index_s;
 reg [4:0] index_p;
+reg [4:0] cnt_m; //match counter
 
 reg [2:0] cs,ns,cs_p,ns_p;
 reg [7:0] string_reg [0:31];
@@ -81,12 +82,20 @@ end
 always@(*) begin
     if(cs == PROCESS) begin
         case(cs_p)
-        P_IDLE: ns_p = CHECK;
+        P_IDLE: begin
+            //if(pattern_reg[0] == 8'h5e) ns_p = CHECK_HEAD;
+            /*else*/ ns_p = CHECK;
+        end 
         CHECK: begin
-            if(cnt_p == index_p) ns_p = P_DONE_MATCH;
+            if(cnt_p == index_p || cnt_m == cnt_p) ns_p = P_DONE_MATCH;
+            //else if(cnt_s == index_s && string_reg[index_s] == pattern_reg[index_p]) ns_p = P_DONE_MATCH;
+            else if(cnt_s == index_s && string_reg[index_s] == pattern_reg[index_p] && (cnt_m+5'd1) == cnt_p) ns_p = P_DONE_MATCH;
             else if(cnt_s == index_s) ns_p = P_DONE_UNMATCH;
             else ns_p = CHECK;
         end 
+        CHECK_HEAD: begin
+            
+        end
         P_DONE_MATCH: ns_p = P_IDLE;
         P_DONE_UNMATCH: ns_p = P_IDLE;
         default: ns_p = P_IDLE;
@@ -100,12 +109,14 @@ always@(posedge clk or posedge reset) begin
     if(reset) begin
         index_s <= 6'd0;
         index_p <= 5'd0;
+        cnt_m <= 5'd0;
         match_index <= 5'd0;
         done <= 1'd0;
     end
     else if(cs == DONE) begin
         index_s <= 6'd0;
         index_p <= 5'd0;
+        cnt_m <= 5'd0;
         match_index <= 5'd0;
         done <= 1'd0;
     end
@@ -114,11 +125,14 @@ always@(posedge clk or posedge reset) begin
             if(string_reg[index_s] == pattern_reg[index_p] || pattern_reg[index_p] == 8'h2e) begin
                 index_p <= index_p + 5'd1;
                 index_s <= index_s + 6'd1;
+                cnt_m <= cnt_m + 5'd1; 
                 if(index_p == 5'd0) match_index <= index_s;
             end
             else if(string_reg[index_s] != pattern_reg[index_p] && pattern_reg[index_p] != 8'h2e) begin
                 index_p <= 5'd0;
-                index_s <= index_s + 6'd1;
+                cnt_m <= 5'd0;
+                if(index_p != 5'd0) index_s <= match_index + 6'd1;
+                else index_s <= index_s + 6'd1;
             end
         end
         else if(cs_p == P_DONE_MATCH || cs_p == P_DONE_UNMATCH) begin 
@@ -137,14 +151,6 @@ always@(posedge clk or posedge reset) begin
     else if(ns_p == P_DONE_UNMATCH) match <= 1'd0;
 end
 
-//process done
-/*
-always@(posedge clk or posedge reset) begin
-    if(reset) done <= 1'd0;
-    else if(cs == PROCESS) done <= 1'd1;
-    else done <= 1'd0;
-end
-*/
 //valid
 always@(posedge clk or posedge reset) begin
     if(reset) valid <= 1'd0;
