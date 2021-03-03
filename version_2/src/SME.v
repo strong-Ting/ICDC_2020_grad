@@ -88,7 +88,6 @@ always@(*) begin
         end 
         CHECK: begin
             if(cnt_p == index_p || cnt_m == cnt_p) ns_p = P_DONE_MATCH;
-            //else if(cnt_s == index_s && string_reg[index_s] == pattern_reg[index_p]) ns_p = P_DONE_MATCH;
             else if(cnt_s == index_s && string_reg[index_s] == pattern_reg[index_p] && (cnt_m+5'd1) == cnt_p) ns_p = P_DONE_MATCH;
             else if(cnt_s == index_s) ns_p = P_DONE_UNMATCH;
             else ns_p = CHECK;
