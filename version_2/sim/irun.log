@@ -1,0 +1,177 @@
+irun: 15.20-s039: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
+TOOL:	irun	15.20-s039: Started on Mar 03, 2021 at 23:57:32 CST
+irun
+	-sv
+	tb_term.sv
+	../src/SME.v
+	+access+r
+Recompiling... reason: file '../src/SME.v' is newer than expected.
+	expected: Wed Mar  3 23:54:18 2021
+	actual:   Wed Mar  3 23:57:30 2021
+file: ../src/SME.v
+	module worklib.SME:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		$unit_0x435f8afc
+		testfixture
+ncelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.SME:v <0x08b3f243>
+			streams:  27, words: 12402
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                  Instances  Unique
+		Modules:                  2       2
+		Registers:               45      45
+		Scalar wires:             6       -
+		Vectored wires:           4       -
+		Always blocks:           16      16
+		Initial blocks:          10      10
+		Cont. assignments:        2       2
+		Pseudo assignments:       1       1
+		Compilation units:        1       1
+		Simulation timescale:  10ps
+	Writing initial simulation snapshot: worklib.testfixture:sv
+Loading snapshot worklib.testfixture:sv .................... Done
+ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+*Verdi* Loading libsscore_ius152.so
+ncsim> source /usr/cad/cadence/INCISIV/cur/tools/inca/files/ncsimrc
+ncsim> run
+FSDB Dumper for IUS, Release Verdi_R-2020.12, Linux, 11/19/2020
+(C) 1996 - 2020 by Synopsys, Inc.
+*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi* : Create FSDB file 'SME.fsdb'
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* : End of traversing.
+*Verdi* : Begin traversing the MDAs, layer (0).
+*Verdi* : Enable +mda and +packedmda dumping.
+*Verdi* : End of traversing the MDAs.
+----------------------
+-- Simulation Start --
+----------------------
+  __________________________________________________________
+  == String 1  "abcdijk lmnop q rstuv"
+  -- Pattern 1  "1234"
+       cycle 36, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 2  "abcd"
+       cycle 43, expect(1,00) , get(1,00) >> Pass
+  -- Pattern 3  "dijk"
+       cycle 53, expect(1,03) , get(1,03) >> Pass
+  -- Pattern 4  "pqrst"
+       cycle 71, expect(0,00) , get(0,0c) >> Pass
+  -- Pattern 5  "pqr.t"
+       cycle 8f, expect(0,00) , get(0,0c) >> Pass
+  -- Pattern 6  "c...k"
+       cycle a0, expect(1,02) , get(1,02) >> Pass
+  -- Pattern 7  "^lmno"
+       cycle be, expect(1,08) , get([1;31m0,00[0m) >> Fail
+  -- Pattern 8  "rstuv$"
+       cycle dd, expect(1,10) , get([1;31m0,10[0m) >> Fail
+  -- Pattern 9  "^rmn"
+       cycle fa, expect(0,00) , get(0,00) >> Pass
+  -- Pattern a  "ijk l$"
+       cycle 119, expect(0,00) , get(0,04) >> Pass
+  -- Pattern b  "v"
+       cycle 133, expect(1,14) , get([1;31m0,14[0m) >> Fail
+  -- Pattern c  "lmnoprst"
+       cycle 154, expect(0,00) , get(0,08) >> Pass
+  -- Pattern d  "^ijk$"
+       cycle 172, expect(0,00) , get(0,00) >> Pass
+  -- Pattern e  "^q$"
+       cycle 18e, expect(1,0e) , get([1;31m0,00[0m) >> Fail
+  __________________________________________________________
+  == String 2  "2x1=2 2x2=4 2x3=6"
+  -- Pattern 1  "^2.2.2"
+       cycle 1ba, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 2  "2.2.2"
+       cycle 1cd, expect(1,04) , get(1,04) >> Pass
+  -- Pattern 3  "^2.2.4$"
+       cycle 1e9, expect(1,06) , get([1;31m0,00[0m) >> Fail
+  -- Pattern 4  "."
+       cycle 1f0, expect(1,00) , get(1,00) >> Pass
+  -- Pattern 5  "^.."
+       cycle 208, expect(1,00) , get([1;31m0,00[0m) >> Fail
+  -- Pattern 6  "^.$"
+       cycle 220, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 7  "2.$"
+       cycle 238, expect(0,00) , get(0,0c) >> Pass
+  -- Pattern 8  "2x4=7"
+       cycle 252, expect(0,00) , get(0,0c) >> Pass
+  -- Pattern 9  "3=6-3"
+       cycle 26c, expect(0,00) , get(0,0e) >> Pass
+  -- Pattern a  "1.2=2"
+       cycle 286, expect(0,00) , get(0,02) >> Pass
+  -- Pattern b  "2*2=4"
+       cycle 2a0, expect(1,00) , get([1;31m0,0c[0m) >> Fail
+  __________________________________________________________
+  == String 3  "She sees cheese"
+  -- Pattern 1  "ees."
+       cycle 2c1, expect(1,05) , get(1,05) >> Pass
+  -- Pattern 2  "ees.$"
+       cycle 2d9, expect(1,0b) , get([1;31m0,0b[0m) >> Fail
+  -- Pattern 3  "e..se"
+       cycle 2f1, expect(0,00) , get(0,0b) >> Pass
+  -- Pattern 4  "e..ee$"
+       cycle 30a, expect(0,00) , get(0,0b) >> Pass
+  -- Pattern 5  "^ees*"
+       cycle 322, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 6  "hee*se"
+       cycle 33b, expect(1,0a) , get([1;31m0,0a[0m) >> Fail
+  -- Pattern 7  "he.s"
+       cycle 349, expect(1,01) , get(1,01) >> Pass
+  -- Pattern 8  "*see$"
+       cycle 361, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 9  "se*ce"
+       cycle 379, expect(0,00) , get(0,0d) >> Pass
+  __________________________________________________________
+  == String 4  "But she said the butter's bitter"
+  -- Pattern 1  "sa*said"
+       cycle 3c4, expect(0,00) , get(0,18) >> Pass
+  -- Pattern 2  "b*tter"
+       cycle 3ee, expect(1,11) , get([1;31m0,1a[0m) >> Fail
+  -- Pattern 3  "b*tter$"
+       cycle 419, expect(1,11) , get([1;31m0,1a[0m) >> Fail
+  -- Pattern 4  "ut*r"
+       cycle 441, expect(1,01) , get([1;31m0,12[0m) >> Fail
+  -- Pattern 5  "ut*tted"
+       cycle 46c, expect(0,00) , get(0,12) >> Pass
+  -- Pattern 6  "^ut*tter"
+       cycle 498, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 7  "*tered"
+       cycle 4c2, expect(0,00) , get(0,00) >> Pass
+  __________________________________________________________
+  == String 5  "He threw three free throws"
+  -- Pattern 1  "thr*the$"
+       cycle 502, expect(0,00) , get(0,14) >> Pass
+  -- Pattern 2  "^thro*th"
+       cycle 528, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 3  ".ree th"
+       cycle 54d, expect(1,0f) , get([1;31m0,18[0m) >> Fail
+  -- Pattern 4  ".ree  fr"
+       cycle 573, expect(0,00) , get(0,18) >> Pass
+  -- Pattern 5  ".ree *re"
+       cycle 599, expect(1,0a) , get([1;31m0,18[0m) >> Fail
+  -- Pattern 6  "re. thr"
+       cycle 5b1, expect(1,05) , get(1,05) >> Pass
+  -- Pattern 7  "ee*ee fr"
+       cycle 5d7, expect(0,00) , get(0,11) >> Pass
+  -- Pattern 8  "ee*ee th"
+       cycle 5fd, expect(1,0c) , get([1;31m0,11[0m) >> Fail
+  -- Pattern 9  "re*ee.$"
+       cycle 622, expect(0,00) , get(0,16) >> Pass
+  -- Pattern a  "^...$"
+       cycle 645, expect(0,00) , get(0,00) >> Pass
+  -- Pattern b  "^....$"
+       cycle 669, expect(1,0f) , get([1;31m0,00[0m) >> Fail
+----------------------------------
+-- Simulation finish            --
+-- cycle =1642 , Score =52       --
+----------------------------------
+Simulation complete via $finish(1) at time 32840 NS + 0
+./tb_term.sv:201                     $finish;
+ncsim> exit
+TOOL:	irun	15.20-s039: Exiting on Mar 03, 2021 at 23:57:40 CST  (total: 00:00:08)

@@ -1,0 +1,11 @@
+*design* DebussyLib (btIdent Verdi_R-2020.12)
+Command arguments:
+    +define+verilog
+    -sv
+    tb_term.sv
+    ../src/SME.v
+
+Highest level modules:
+testfixture
+
+Total	0 error(s),   0 warning(s)
