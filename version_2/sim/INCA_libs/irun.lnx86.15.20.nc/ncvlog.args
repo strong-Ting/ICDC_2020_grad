@@ -1,11 +1,10 @@
 //
-// File created by:  irun
+// File created by:  ncverilog
 // Do not modify this file
 //
 -XLMODE
 ./INCA_libs/irun.lnx86.15.20.nc
 -RUNMODE
--sv
 tb_term.sv
 ../src/SME.v
 -CDSLIB

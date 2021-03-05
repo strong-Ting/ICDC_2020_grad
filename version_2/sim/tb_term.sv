@@ -1,7 +1,7 @@
 `timescale 1ns/10ps
 `define CYCLE      20.0  
 `define SDFFILE    "../syn/SME_syn.sdf"
-`define End_CYCLE  1000000
+`define End_CYCLE  100000
 `define PAT        "Btestdata.txt"
 module testfixture();
 

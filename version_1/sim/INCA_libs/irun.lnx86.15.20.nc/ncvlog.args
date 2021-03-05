@@ -5,13 +5,8 @@
 -XLMODE
 ./INCA_libs/irun.lnx86.15.20.nc
 -RUNMODE
--sv
 tb_term.sv
-../syn/SME_syn.v
--VFILE
-/usr/cad/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v
--DEFINE
-SDF
+../src/SME.v
 -CDSLIB
 ./INCA_libs/irun.lnx86.15.20.nc/cdsrun.lib
 -HDLVAR

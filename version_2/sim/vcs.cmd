@@ -1,9 +1,8 @@
 vcs \
 -R \
--full64 \
 -sverilog \
 tb_term.sv \
-SME.v \
+../src/SME.v \
 +access+r \
 +vcs+fsdbon 
 #+define+SDF \

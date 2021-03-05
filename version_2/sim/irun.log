@@ -1,13 +1,13 @@
 irun: 15.20-s039: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
-TOOL:	irun	15.20-s039: Started on Mar 04, 2021 at 00:41:53 CST
+TOOL:	irun	15.20-s039: Started on Mar 05, 2021 at 22:39:26 CST
 irun
 	-sv
 	tb_term.sv
 	../src/SME.v
 	+access+r
-Recompiling... reason: file '../src/SME.v' is newer than expected.
-	expected: Thu Mar  4 00:40:12 2021
-	actual:   Thu Mar  4 00:41:50 2021
+file: tb_term.sv
+	module worklib.testfixture:sv
+		errors: 0, warnings: 0
 file: ../src/SME.v
 	module worklib.SME:v
 		errors: 0, warnings: 0
@@ -19,14 +19,18 @@ file: ../src/SME.v
 ncelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
 	Building instance overlay tables: .................... Done
 	Generating native compiled code:
-		worklib.SME:v <0x75de0da0>
-			streams:  29, words: 13726
+		worklib.SME:v <0x4fb275dc>
+			streams:  34, words: 20305
+		worklib.\$unit_0x435f8afc :compilation_unit <0x2e2919da>
+			streams:   1, words:  6032
+		worklib.testfixture:sv <0x0f12d4bc>
+			streams:  15, words: 22487
 	Building instance specific data structures.
 	Loading native compiled code:     .................... Done
 	Design hierarchy summary:
 		                  Instances  Unique
 		Modules:                  2       2
-		Registers:               46      46
+		Registers:               49      49
 		Scalar wires:             6       -
 		Vectored wires:           4       -
 		Always blocks:           16      16
@@ -56,122 +60,122 @@ FSDB Dumper for IUS, Release Verdi_R-2020.12, Linux, 11/19/2020
   __________________________________________________________
   == String 1  "abcdijk lmnop q rstuv"
   -- Pattern 1  "1234"
-       cycle 36, expect(0,00) , get(0,00) >> Pass
+       cycle 37, expect(0,00) , get(0,00) >> Pass
   -- Pattern 2  "abcd"
-       cycle 43, expect(1,00) , get(1,00) >> Pass
+       cycle 44, expect(1,00) , get(1,00) >> Pass
   -- Pattern 3  "dijk"
-       cycle 53, expect(1,03) , get(1,03) >> Pass
+       cycle 54, expect(1,03) , get(1,03) >> Pass
   -- Pattern 4  "pqrst"
-       cycle 72, expect(0,00) , get(0,0c) >> Pass
+       cycle 74, expect(0,00) , get(0,0c) >> Pass
   -- Pattern 5  "pqr.t"
-       cycle 91, expect(0,00) , get(0,0c) >> Pass
+       cycle 94, expect(0,00) , get(0,0c) >> Pass
   -- Pattern 6  "c...k"
-       cycle a2, expect(1,02) , get(1,02) >> Pass
+       cycle a5, expect(1,02) , get(1,02) >> Pass
   -- Pattern 7  "^lmno"
-       cycle c0, expect(1,08) , get([1;31m0,00[0m) >> Fail
+       cycle bb, expect(1,08) , get(1,08) >> Pass
   -- Pattern 8  "rstuv$"
-       cycle df, expect(1,10) , get([1;31m0,10[0m) >> Fail
+       cycle db, expect(1,10) , get(1,10) >> Pass
   -- Pattern 9  "^rmn"
-       cycle fc, expect(0,00) , get(0,00) >> Pass
+       cycle fa, expect(0,00) , get(0,10) >> Pass
   -- Pattern a  "ijk l$"
-       cycle 120, expect(0,00) , get(0,04) >> Pass
+       cycle 11f, expect(0,00) , get(0,04) >> Pass
   -- Pattern b  "v"
        cycle 13a, expect(1,14) , get(1,14) >> Pass
   -- Pattern c  "lmnoprst"
-       cycle 160, expect(0,00) , get(0,08) >> Pass
+       cycle 161, expect(0,00) , get(0,08) >> Pass
   -- Pattern d  "^ijk$"
-       cycle 17e, expect(0,00) , get(0,00) >> Pass
+       cycle 184, expect(0,00) , get(0,04) >> Pass
   -- Pattern e  "^q$"
-       cycle 19a, expect(1,0e) , get([1;31m0,00[0m) >> Fail
+       cycle 19c, expect(1,0e) , get(1,0e) >> Pass
   __________________________________________________________
   == String 2  "2x1=2 2x2=4 2x3=6"
   -- Pattern 1  "^2.2.2"
-       cycle 1c6, expect(0,00) , get(0,00) >> Pass
+       cycle 1d8, expect(0,00) , get(0,0c) >> Pass
   -- Pattern 2  "2.2.2"
-       cycle 1db, expect(1,04) , get(1,04) >> Pass
+       cycle 1ed, expect(1,04) , get(1,04) >> Pass
   -- Pattern 3  "^2.2.4$"
-       cycle 1f7, expect(1,06) , get([1;31m0,00[0m) >> Fail
+       cycle 20b, expect(1,06) , get(1,06) >> Pass
   -- Pattern 4  "."
-       cycle 1fe, expect(1,00) , get(1,00) >> Pass
+       cycle 212, expect(1,00) , get(1,00) >> Pass
   -- Pattern 5  "^.."
-       cycle 216, expect(1,00) , get([1;31m0,00[0m) >> Fail
+       cycle 21c, expect(1,00) , get(1,00) >> Pass
   -- Pattern 6  "^.$"
-       cycle 22e, expect(0,00) , get(0,00) >> Pass
+       cycle 230, expect(0,00) , get(0,04) >> Pass
   -- Pattern 7  "2.$"
-       cycle 250, expect(0,00) , get(0,0c) >> Pass
+       cycle 253, expect(0,00) , get(0,0c) >> Pass
   -- Pattern 8  "2x4=7"
-       cycle 272, expect(0,00) , get(0,0c) >> Pass
+       cycle 276, expect(0,00) , get(0,0c) >> Pass
   -- Pattern 9  "3=6-3"
-       cycle 28c, expect(0,00) , get(0,0e) >> Pass
+       cycle 291, expect(0,00) , get(0,0e) >> Pass
   -- Pattern a  "1.2=2"
-       cycle 2a9, expect(0,00) , get(0,02) >> Pass
+       cycle 2af, expect(0,00) , get(0,02) >> Pass
   -- Pattern b  "2*2=4"
-       cycle 2c8, expect(1,00) , get([1;31m0,0c[0m) >> Fail
+       cycle 2c5, expect(1,00) , get(1,00) >> Pass
   __________________________________________________________
   == String 3  "She sees cheese"
   -- Pattern 1  "ees."
-       cycle 2ea, expect(1,05) , get(1,05) >> Pass
+       cycle 2e7, expect(1,05) , get(1,05) >> Pass
   -- Pattern 2  "ees.$"
-       cycle 308, expect(1,0b) , get([1;31m0,0b[0m) >> Fail
+       cycle 306, expect(1,0b) , get(1,0b) >> Pass
   -- Pattern 3  "e..se"
-       cycle 329, expect(0,00) , get(0,0b) >> Pass
+       cycle 328, expect(0,00) , get(0,0b) >> Pass
   -- Pattern 4  "e..ee$"
        cycle 34d, expect(0,00) , get(0,0b) >> Pass
   -- Pattern 5  "^ees*"
-       cycle 365, expect(0,00) , get(0,00) >> Pass
+       cycle 36b, expect(0,00) , get(0,0b) >> Pass
   -- Pattern 6  "hee*se"
-       cycle 383, expect(1,0a) , get([1;31m0,0a[0m) >> Fail
+       cycle 388, expect(1,0a) , get(1,0a) >> Pass
   -- Pattern 7  "he.s"
-       cycle 391, expect(1,01) , get(1,01) >> Pass
+       cycle 396, expect(1,01) , get(1,01) >> Pass
   -- Pattern 8  "*see$"
-       cycle 3a9, expect(0,00) , get(0,00) >> Pass
+       cycle 3b0, expect(0,00) , get(0,00) >> Pass
   -- Pattern 9  "se*ce"
-       cycle 3c4, expect(0,00) , get(0,0d) >> Pass
+       cycle 3ca, expect(0,00) , get(0,04) >> Pass
   __________________________________________________________
   == String 4  "But she said the butter's bitter"
   -- Pattern 1  "sa*said"
-       cycle 413, expect(0,00) , get(0,18) >> Pass
+       cycle 418, expect(0,00) , get(0,08) >> Pass
   -- Pattern 2  "b*tter"
-       cycle 43f, expect(1,11) , get([1;31m0,1a[0m) >> Fail
+       cycle 43b, expect(1,11) , get(1,11) >> Pass
   -- Pattern 3  "b*tter$"
-       cycle 46c, expect(1,11) , get([1;31m0,1a[0m) >> Fail
+       cycle 468, expect(1,11) , get(1,11) >> Pass
   -- Pattern 4  "ut*r"
-       cycle 498, expect(1,01) , get([1;31m0,12[0m) >> Fail
+       cycle 489, expect(1,01) , get(1,01) >> Pass
   -- Pattern 5  "ut*tted"
-       cycle 4c7, expect(0,00) , get(0,12) >> Pass
+       cycle 4b6, expect(0,00) , get(0,01) >> Pass
   -- Pattern 6  "^ut*tter"
-       cycle 4f3, expect(0,00) , get(0,00) >> Pass
+       cycle 4e7, expect(0,00) , get(0,12) >> Pass
   -- Pattern 7  "*tered"
-       cycle 51d, expect(0,00) , get(0,00) >> Pass
+       cycle 513, expect(0,00) , get(0,00) >> Pass
   __________________________________________________________
   == String 5  "He threw three free throws"
   -- Pattern 1  "thr*the$"
-       cycle 566, expect(0,00) , get(0,14) >> Pass
+       cycle 555, expect(0,00) , get(0,03) >> Pass
   -- Pattern 2  "^thro*th"
-       cycle 58c, expect(0,00) , get(0,00) >> Pass
+       cycle 586, expect(0,00) , get(0,14) >> Pass
   -- Pattern 3  ".ree th"
-       cycle 5c3, expect(1,0f) , get(1,0f) >> Pass
+       cycle 5bd, expect(1,0f) , get(1,0f) >> Pass
   -- Pattern 4  ".ree  fr"
-       cycle 60c, expect(0,00) , get(0,18) >> Pass
+       cycle 607, expect(0,00) , get(0,18) >> Pass
   -- Pattern 5  ".ree *re"
-       cycle 655, expect(1,0a) , get([1;31m0,18[0m) >> Fail
+       cycle 633, expect(1,0a) , get(1,0a) >> Pass
   -- Pattern 6  "re. thr"
-       cycle 66d, expect(1,05) , get(1,05) >> Pass
+       cycle 64b, expect(1,05) , get(1,05) >> Pass
   -- Pattern 7  "ee*ee fr"
-       cycle 69b, expect(0,00) , get(0,12) >> Pass
+       cycle 675, expect(0,00) , get(0,0c) >> Pass
   -- Pattern 8  "ee*ee th"
-       cycle 6c9, expect(1,0c) , get([1;31m0,12[0m) >> Fail
+       cycle 69b, expect(1,0c) , get(1,0c) >> Pass
   -- Pattern 9  "re*ee.$"
-       cycle 6f5, expect(0,00) , get(0,16) >> Pass
+       cycle 6c2, expect(0,00) , get(0,05) >> Pass
   -- Pattern a  "^...$"
-       cycle 718, expect(0,00) , get(0,00) >> Pass
+       cycle 6e6, expect(0,00) , get(0,05) >> Pass
   -- Pattern b  "^....$"
-       cycle 73c, expect(1,0f) , get([1;31m0,00[0m) >> Fail
+       cycle 743, expect(1,0f) , get(1,0f) >> Pass
 ----------------------------------
--- Simulation finish            --
--- cycle =1853 , Score =58       --
+-- Simulation finish, ALL PASS  --
+-- cycle =1860 , Score =100       --
 ----------------------------------
-Simulation complete via $finish(1) at time 37060 NS + 0
+Simulation complete via $finish(1) at time 37200 NS + 0
 ./tb_term.sv:201                     $finish;
 ncsim> exit
-TOOL:	irun	15.20-s039: Exiting on Mar 04, 2021 at 00:41:59 CST  (total: 00:00:06)
+TOOL:	irun	15.20-s039: Exiting on Mar 05, 2021 at 22:39:32 CST  (total: 00:00:06)
