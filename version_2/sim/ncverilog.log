@@ -1,8 +1,11 @@
 ncverilog: 15.20-s039: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
-TOOL:	ncverilog	15.20-s039: Started on Mar 06, 2021 at 00:25:41 CST
+TOOL:	ncverilog	15.20-s039: Started on Mar 06, 2021 at 00:34:45 CST
 ncverilog
 	tb_term.sv
-	../src/SME.v
+	../syn/SME_syn.v
+	-v
+	/usr/cad/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v
+	+define+SDF
 	+access+r
 Loading snapshot worklib.testfixture:sv .................... Done
 ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
@@ -142,4 +145,4 @@ FSDB Dumper for IUS, Release Verdi_R-2020.12, Linux, 11/19/2020
 Simulation complete via $finish(1) at time 36160 NS + 0
 ./tb_term.sv:201                     $finish;
 ncsim> exit
-TOOL:	ncverilog	15.20-s039: Exiting on Mar 06, 2021 at 00:25:47 CST  (total: 00:00:06)
+TOOL:	ncverilog	15.20-s039: Exiting on Mar 06, 2021 at 00:34:51 CST  (total: 00:00:06)

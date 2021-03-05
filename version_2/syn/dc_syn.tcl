@@ -11,9 +11,8 @@ uniquify
 set_fix_multiple_port_nets -all -buffer_constants [get_designs *]
 
 #Synthesis all design
-#compile -map_effort high -area_effort high
-#compile -map_effort high -area_effort high -inc
-compile
+compile -map_effort high -area_effort high
+compile -map_effort high -area_effort high -inc
 
 write -format ddc     -hierarchy -output "SME_syn.ddc"
 write_sdf -version 1.0  SME_syn.sdf

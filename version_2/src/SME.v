@@ -14,8 +14,7 @@ reg [5:0] index_s;
 reg [4:0] index_p,index_p_temp;
 reg [4:0] cnt_m,cnt_m_temp; //match counter
 
-reg [2:0] cs,ns;
-reg [3:0] cs_p,ns_p;
+reg [2:0] cs,ns,cs_p,ns_p;
 reg [7:0] string_reg [0:31];
 reg [5:0] cnt_s; //string counter
 reg [7:0] pattern_reg [0:7];
@@ -34,14 +33,11 @@ parameter RECV_P = 3'd2; //receive pattern
 parameter PROCESS = 3'd3;
 parameter DONE = 3'd4;
 
-parameter P_IDLE = 4'd0;
-parameter CHECK_HEAD = 4'd1;
-parameter CHECK = 4'd2;
-parameter STAR = 4'd3;
-parameter CHECK_TAIL = 4'd4;
-parameter P_DONE_MATCH = 4'd5;
-parameter P_DONE_UNMATCH = 4'd6; //unmatch
-parameter CHECK_MATCH = 4'd7;
+parameter P_IDLE = 3'd0;
+parameter CHECK = 3'd1;
+parameter CHECK_MATCH = 3'd2;
+parameter P_DONE_MATCH = 3'd3;
+parameter P_DONE_UNMATCH = 3'd4; //unmatch
 //state switch
 always@(posedge clk or posedge reset) begin
     if(reset) begin
@@ -142,7 +138,7 @@ always@(posedge clk or posedge reset) begin
                 cnt_m <= cnt_m + 5'd1; 
                 if(index_p == 5'd0) match_index <= index_s;
             end
-            else if(pattern_reg[index_p] == 8'h5e) 
+            else if(pattern_reg[index_p] == 8'h5e) //special pattern ^
             begin
                 if(index_s == 6'd0 && (string_reg[index_s] == pattern_reg[index_p+5'd1] || pattern_reg[index_p+5'd1] == 8'h2e) ) begin
                     index_p <= index_p + 5'd1;
@@ -165,13 +161,13 @@ always@(posedge clk or posedge reset) begin
                     else index_s <= index_s + 6'd1;
                 end
             end
-            else if(pattern_reg[index_p] == 8'h24 && (index_s == cnt_s || string_reg[index_s] == 8'h20)) begin
+            else if(pattern_reg[index_p] == 8'h24 && (index_s == cnt_s || string_reg[index_s] == 8'h20)) begin //special pattern $
                 index_p <= index_p + 5'd1;
                 index_s <= index_s + 6'd1;
                 cnt_m <= cnt_m + 5'd1; 
                 if(index_p == 5'd0) match_index <= index_s;
             end
-            else if(pattern_reg[index_p] == 8'h2A) begin
+            else if(pattern_reg[index_p] == 8'h2A) begin //special pattern *
                 star_flag <= 1'd1;
                 index_p <= index_p + 5'd1;
                 index_p_temp <= index_p + 5'd1;
