@@ -1,5 +1,1 @@
-debImport "tb_term.sv" "../src/SME.v"
-debLoadSimResult \
-           /home/DICS_LAB/M10912039/CIC/CIC_2020_grad/version_2/sim/SME.fsdb
-wvCreateWindow
 debExit
