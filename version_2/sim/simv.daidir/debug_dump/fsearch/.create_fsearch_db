@@ -1,9 +1,0 @@
-#!/bin/sh -h 
-PYTHONHOME=/usr/cad/synopsys/vcs/cur//etc/search/pyh
-export PYTHONHOME
-PYTHONPATH=/usr/cad/synopsys/vcs/cur/linux/lib/pylib27
-export PYTHONPATH
-LD_LIBRARY_PATH=/usr/cad/synopsys/vcs/cur/linux/lib:/usr/cad/synopsys/vcs/cur/linux/lib/pylib27
-export LD_LIBRARY_PATH
-/usr/cad/synopsys/vcs/cur/linux/bin/vcsfind_create_index.exe  -z  "/home/DICS_LAB/M10912039/CIC/CIC_2020_grad/version_2/sim/simv.daidir/debug_dump/fsearch/./idents_wmVT8V.xml.gz" "/home/DICS_LAB/M10912039/CIC/CIC_2020_grad/version_2/sim/simv.daidir/debug_dump/fsearch/./idents_tapi.xml.gz" -o "/home/DICS_LAB/M10912039/CIC/CIC_2020_grad/version_2/sim/simv.daidir/debug_dump/fsearch/fsearch.db_tmp"
-\mv "/home/DICS_LAB/M10912039/CIC/CIC_2020_grad/version_2/sim/simv.daidir/debug_dump/fsearch/fsearch.db_tmp" "/home/DICS_LAB/M10912039/CIC/CIC_2020_grad/version_2/sim/simv.daidir/debug_dump/fsearch/fsearch.db"
