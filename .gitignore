@@ -11,6 +11,14 @@ novas_dump.log
 *.X
 *.svf
 *.pdf
-
-
- 
+verdiLog
+verdiLog/
+nWaveLog
+nWaveLog/
+simv.daidir
+simv.daidir/
+csrc
+csrc/
+simv
+ucli.key
+sim/*.log
