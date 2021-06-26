@@ -22,3 +22,4 @@ csrc/
 simv
 ucli.key
 sim/*.log
+sim/
